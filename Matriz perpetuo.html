@@ -1,0 +1,334 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Produto e Mercado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-lg max-w-2xl w-full">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Análise de Produto e Mercado</h1>
+
+        <form id="analysis-form" class="space-y-4">
+            <!-- Perguntas -->
+
+            <div class="space-y-2">
+            <label class="block text-gray-700 font-medium">Meu produto atuará em um mercado que possui baixa ou nenhuma regulamentação</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q1" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q1" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">O mercado em que vou atuar possui alta tração diante do público</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q2" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q2" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">O mercado onde irei atuar possui uma dinâmica forte de mudanças e atualizações</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q3" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q3" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu produto irá trabalhar um Macro Nicho</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q4" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q4" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">O mercado ancora para cima produtos como o meu</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q5" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q5" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">O público que compra este tipo de produto costuma ter alto poder aquisitivo</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q6" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q6" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Mercado com alta possibilidade de aproveitamento sazonal para vendas</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q7" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q7" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu mercado já é muito concorrido</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q8" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q8" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">O mercado já tem muita consciência do assunto que meu produto aborda</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q9" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q9" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu produto tem muita pesquisa nos buscadores</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q10" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q10" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Eu possuo muito lastro no assunto</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q11" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q11" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Eu possuo um alto grau de diferenciação</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q12" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q12" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu produto desperta um desejo natural muito forte em adquiri-lo</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q13" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q13" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Consigo ou tenho facilidade para conseguir depoimentos</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q14" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q14" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu produto tem muita urgência natural</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q15" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q15" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu produto tem alto grau de tangibilidade</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q16" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q16" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu produto tem capacidade de promover um resultado rápido</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q17" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q17" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Tenho muita credibilidade no assunto</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q18" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q18" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label class="block text-gray-700 font-medium">Meu mercado renova a audiência muito rapidamente</label>
+                <div class="flex space-x-4">
+                    <label><input type="radio" name="q19" value="verdadeiro" class="mr-1"> Verdadeiro</label>
+                    <label><input type="radio" name="q19" value="falso" class="mr-1"> Falso</label>
+                </div>
+            </div>
+
+            <!-- Botão de envio -->
+            <div class="text-center mt-6">
+                <button type="button" onclick="generateReport()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                    Enviar Respostas
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function generateReport() {
+            const form = document.getElementById('analysis-form');
+            const formData = new FormData(form);
+            const responses = {};
+            formData.forEach((value, key) => {
+                responses[key] = value;
+            });
+
+            const productStrengths = [];
+            const productWeaknesses = [];
+            const marketStrengths = [];
+            const marketWeaknesses = [];
+
+            if (responses.q1 === 'verdadeiro') {
+                marketStrengths.push('Baixa ou nenhuma regulamentação');
+            } else {
+                marketWeaknesses.push('Alta regulamentação');
+            }
+
+            if (responses.q2 === 'verdadeiro') {
+                marketStrengths.push('Alta tração diante do público');
+            } else {
+                marketWeaknesses.push('Baixa tração diante do público');
+            }
+
+            if (responses.q3 === 'verdadeiro') {
+                marketStrengths.push('Dinâmica forte de mudanças e atualizações');
+            } else {
+                marketWeaknesses.push('Poucas mudanças e atualizações');
+            }
+
+            if (responses.q4 === 'verdadeiro') {
+                productWeaknesses.push('Macro Nicho');
+            } else {
+                productStrengths.push('Nicho específico');
+            }
+
+            if (responses.q5 === 'verdadeiro') {
+                marketStrengths.push('Produtos premium semelhantes');
+            } else {
+                marketWeaknesses.push('Poucos produtos premium semelhantes');
+            }
+
+            if (responses.q6 === 'verdadeiro') {
+                marketStrengths.push('Público com alto poder aquisitivo');
+            } else {
+                marketWeaknesses.push('Público com baixo poder aquisitivo');
+            }
+
+            if (responses.q7 === 'verdadeiro') {
+                marketStrengths.push('Alta possibilidade de aproveitamento sazonal');
+            } else {
+                marketWeaknesses.push('Baixa possibilidade de aproveitamento sazonal');
+            }
+
+            if (responses.q8 === 'verdadeiro') {
+                marketWeaknesses.push('Mercado muito concorrido');
+            } else {
+                marketStrengths.push('Mercado pouco concorrido');
+            }
+
+            if (responses.q9 === 'verdadeiro') {
+                marketStrengths.push('Alta consciência do assunto');
+            } else {
+                marketWeaknesses.push('Baixa consciência do assunto');
+            }
+
+            if (responses.q10 === 'verdadeiro') {
+                productStrengths.push('Muita pesquisa nos buscadores');
+            } else {
+                productWeaknesses.push('Pouca pesquisa nos buscadores');
+            }
+
+            if (responses.q11 === 'verdadeiro') {
+                productStrengths.push('Muito lastro no assunto');
+            } else {
+                productWeaknesses.push('Pouco lastro no assunto');
+            }
+
+            if (responses.q12 === 'verdadeiro') {
+                productStrengths.push('Alto grau de diferenciação');
+            } else {
+                productWeaknesses.push('Baixo grau de diferenciação');
+            }
+
+            if (responses.q13 === 'verdadeiro') {
+                productStrengths.push('Desperta desejo natural forte');
+            } else {
+                productWeaknesses.push('Desperta pouco desejo natural');
+            }
+
+            if (responses.q14 === 'verdadeiro') {
+                productStrengths.push('Facilidade para conseguir depoimentos');
+            } else {
+                productWeaknesses.push('Dificuldade para conseguir depoimentos');
+            }
+
+            if (responses.q15 === 'verdadeiro') {
+                productStrengths.push('Muita urgência natural');
+            } else {
+                productWeaknesses.push('Pouca urgência natural');
+            }
+
+            if (responses.q16 === 'verdadeiro') {
+                productStrengths.push('Alto grau de tangibilidade');
+            } else {
+                productWeaknesses.push('Baixo grau de tangibilidade');
+            }
+
+            if (responses.q17 === 'verdadeiro') {
+                productStrengths.push('Capacidade de promover resultado rápido');
+            } else {
+                productWeaknesses.push('Demora para promover resultado');
+            }
+
+            if (responses.q18 === 'verdadeiro') {
+                productStrengths.push('Muita credibilidade no assunto');
+            } else {
+                productWeaknesses.push('Pouca credibilidade no assunto');
+            }
+
+            if (responses.q19 === 'verdadeiro') {
+                marketStrengths.push('Renova a audiência rapidamente');
+            } else {
+                marketWeaknesses.push('Renova a audiência lentamente');
+            }
+
+            const doc = new jspdf.jsPDF();
+            doc.setFontSize(16);
+            doc.text('Análise de Produto e Mercado', 20, 20);
+
+            doc.setFontSize(12);
+            doc.text('Pontos Fortes do Produto:', 20, 40);
+            productStrengths.forEach((item, index) => {
+                doc.text(`- ${item}`, 20, 50 + index * 10);
+            });
+
+            doc.text('Pontos Fracos do Produto:', 20, 60 + productStrengths.length * 10);
+            productWeaknesses.forEach((item, index) => {
+                doc.text(`- ${item}`, 20, 70 + productStrengths.length * 10 + index * 10);
+            });
+
+            doc.text('Pontos Fortes do Mercado:', 20, 80 + productStrengths.length * 10 + productWeaknesses.length * 10);
+            marketStrengths.forEach((item, index) => {
+                doc.text(`- ${item}`, 20, 90 + productStrengths.length * 10 + productWeaknesses.length * 10 + index * 10);
+            });
+
+            doc.text('Pontos Fracos do Mercado:', 20, 100 + productStrengths.length * 10 + productWeaknesses.length * 10 + marketStrengths.length * 10);
+            marketWeaknesses.forEach((item, index) => {
+                doc.text(`- ${item}`, 20, 110 + productStrengths.length * 10 + productWeaknesses.length * 10 + marketStrengths.length * 10 + index * 10);
+            });
+
+            doc.save('analise_produto_mercado.pdf');
+        }
+    </script>
+</body>
+</html>
